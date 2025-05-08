@@ -1,5 +1,6 @@
 import requests
 import city
+import sys
 
 city.main()
 url = "https://kyfw.12306.cn/otn/leftTicket/queryG?leftTicketDTO.train_date=2025-05-08&leftTicketDTO.from_station=VXK&leftTicketDTO.to_station=ZBK&purpose_codes=ADULT"
