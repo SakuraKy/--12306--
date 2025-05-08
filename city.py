@@ -4,12 +4,8 @@ import os
 import sys
 import datetime as dt
 
-RunByModule = True
-
 
 def printFormat(text, end="\n"):
-    if RunByModule:
-        return
     print(f"\033[K[{dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {text}", end=end)
 
 
@@ -74,5 +70,4 @@ def main():
 
 
 if __name__ == "__main__":
-    RunByModule = False
     main()
